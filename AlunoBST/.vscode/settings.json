@@ -1,0 +1,10 @@
+{
+	"C_Cpp.errorSquiggles": "Enabled",
+	"C_Cpp.intelliSenseEngineFallback": "Disabled",
+	"files.associations": {
+		".sequelizerc": "javascript",
+		".stylelintrc": "json",
+		".prettierrc": "json",
+		"binarytree.h": "c"
+	}
+}
