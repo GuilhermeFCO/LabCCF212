@@ -5,6 +5,9 @@
 		".sequelizerc": "javascript",
 		".stylelintrc": "json",
 		".prettierrc": "json",
-		"binarytree.h": "c"
+		"binarytree.h": "c",
+		"*.tcc": "c",
+		"bitset": "c",
+		"ratio": "c"
 	}
 }

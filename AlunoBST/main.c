@@ -6,7 +6,7 @@ int main() {
     file = fopen("./students.txt", "r");
     char name[100], matriculation[100];
     float grade;
-    Node *root;
+    Node *root, *bigger, *smaller;
     initializeNode(&root);
 
 
@@ -15,10 +15,17 @@ int main() {
     }
     fclose(file);
 
-    printOrder(root);
+    printOrder(root, 1);
     printf("\n\n");
-    printPosOrder(root);
+    printf("Number of students: %d", count(root));
     printf("\n\n");
-    printPreOrder(root);
+    bigger = highest(root);
+    printf("Highest grade: %s - %s - %f", bigger->student.name, bigger->student.matriculation, bigger->student.grade);
+    printf("\n\n");
+    smaller = lowest(root);
+    printf("Lowest grade: %s - %s - %f", smaller->student.name, smaller->student.matriculation, smaller->student.grade);
+    printf("\n\n");
+    printf("Numbers of Mean: %d", numbersOfMean(root));
+    printf("\n\n");
     return 0;
 }
